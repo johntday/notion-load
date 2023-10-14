@@ -39,8 +39,6 @@ def cli():
 
 
 if __name__ == '__main__':
-    # python3 load.py notion qdrant -r
-    # python3 load.py notion qdrant -r -v
     load_dotenv()
 
     args = cli()
