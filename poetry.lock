@@ -1025,7 +1025,7 @@ tiktoken = "^0.5.1"
 [package.source]
 type = "git"
 url = "https://github.com/johntday/notion-utils.git"
-reference = "0.1.1"
+reference = "HEAD"
 resolved_reference = "e483923e7ec6adb47d000bb0f88a6b2264881ca2"
 
 [[package]]
@@ -2007,4 +2007,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">3.11,<3.13"
-content-hash = "e94565b42e2286a9c91d824ea13336c4d0c757e8d537952ea9b56c1dfd502a65"
+content-hash = "5468d84852e2bdc07b465a439e786d811c8769ad242d81bab49b71f1fbe50c63"
