@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "notion-load"
-version = "0.1.0"
+version = "0.1.1"
 description = "Load Notion database content into a Qdrant vector database"
 authors = ["John Day <johntday@gmail.com>"]
 readme = "README.md"
@@ -16,7 +16,7 @@ pypdf = "^3.16.2"
 "pdfminer.six" = "^20221105"
 tiktoken = "^0.5.1"
 pandas = "^2.1.1"
-notion_utils = { git = "https://github.com/johntday/notion-utils.git", tag = "0.1.1" }
+notion_utils = { git = "https://github.com/johntday/notion-utils.git" }
 qdrant-client = "^1.6.0"
 
 [build-system]

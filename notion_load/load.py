@@ -2,8 +2,8 @@ import argparse
 
 from dotenv import load_dotenv
 
-from notion_load.utils.load_util import ntfy_notification
-from notion_load.utils.qdrant_util import load_qdrant
+from notion_load.load_util import ntfy_notification
+from notion_load.qdrant_util import load_qdrant
 
 
 def cli():

@@ -7,7 +7,7 @@ from qdrant_client.http import models
 
 from notion_utils.MyNotionDBLoader import MyNotionDBLoader
 
-from notion_load.utils.load_util import split_documents
+from notion_load.load_util import split_documents
 
 
 def get_qdrant_client(url: str,
