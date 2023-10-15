@@ -145,6 +145,7 @@ files = [
 ]
 
 [package.dependencies]
+exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
 idna = ">=2.8"
 sniffio = ">=1.1"
 
@@ -426,6 +427,20 @@ files = [
 [package.dependencies]
 marshmallow = ">=3.18.0,<4.0.0"
 typing-inspect = ">=0.4.0,<1"
+
+[[package]]
+name = "exceptiongroup"
+version = "1.1.3"
+description = "Backport of PEP 654 (exception groups)"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.1.3-py3-none-any.whl", hash = "sha256:343280667a4585d195ca1cf9cef84a4e178c4b6cf2274caef9859782b567d5e3"},
+    {file = "exceptiongroup-1.1.3.tar.gz", hash = "sha256:097acd85d473d75af5bb98e41b61ff7fe35efe6675e4f9370ec6ec5126d160e9"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
 
 [[package]]
 name = "frozenlist"
@@ -849,6 +864,7 @@ files = [
 [package.dependencies]
 aiohttp = ">=3.8.3,<4.0.0"
 anyio = "<4.0"
+async-timeout = {version = ">=4.0.0,<5.0.0", markers = "python_version < \"3.11\""}
 dataclasses-json = ">=0.5.7,<0.7"
 jsonpatch = ">=1.33,<2.0"
 langsmith = ">=0.0.43,<0.1.0"
@@ -1008,7 +1024,7 @@ name = "notion-utils"
 version = "0.1.0"
 description = ""
 optional = false
-python-versions = ">3.11,<3.13"
+python-versions = ">3.9,<3.13"
 files = []
 develop = false
 
@@ -1026,7 +1042,7 @@ tiktoken = "^0.5.1"
 type = "git"
 url = "https://github.com/johntday/notion-utils.git"
 reference = "HEAD"
-resolved_reference = "e483923e7ec6adb47d000bb0f88a6b2264881ca2"
+resolved_reference = "1372bc5c154f40d6835d2729c97b2e81933d95a9"
 
 [[package]]
 name = "numpy"
@@ -1138,6 +1154,7 @@ files = [
 
 [package.dependencies]
 numpy = [
+    {version = ">=1.22.4", markers = "python_version < \"3.11\""},
     {version = ">=1.23.2", markers = "python_version == \"3.11\""},
     {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
 ]
@@ -1388,6 +1405,9 @@ files = [
     {file = "pypdf-3.16.4-py3-none-any.whl", hash = "sha256:a9b1eaf2db4c2edd93093470d33c3f353235c4a694f8a426a92a8ce77cea9eb7"},
     {file = "pypdf-3.16.4.tar.gz", hash = "sha256:01927771b562d4ba84939ef95b393f0179166da786c5db710d07f807c52f480d"},
 ]
+
+[package.dependencies]
+typing_extensions = {version = ">=3.7.4.3", markers = "python_version < \"3.10\""}
 
 [package.extras]
 crypto = ["PyCryptodome", "cryptography"]
@@ -2006,5 +2026,5 @@ multidict = ">=4.0"
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">3.11,<3.13"
-content-hash = "5468d84852e2bdc07b465a439e786d811c8769ad242d81bab49b71f1fbe50c63"
+python-versions = ">3.9,<3.13"
+content-hash = "925749b50ebaaa30cd41973a3648a46fcbd3ba7862f91e6209d3e6545e48e0d3"
