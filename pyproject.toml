@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "notion-load"
-version = "0.1.2"
+version = "0.1.0"
 description = "Load Notion database content into a Qdrant vector database"
 authors = ["John Day <johntday@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">3.9,<3.13"
