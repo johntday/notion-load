@@ -1,5 +1,12 @@
-## Load data from Notion database to Qdrant vector store
+# Load data from Notion database to Qdrant vector store
 
+## Setup
+```bash
+cp .env.example .env
+# add your own OpenAI, Notion and Qdrant credentials to .env
+```
+
+## Run on local machine
 Standard mode.
 
 ```bash
