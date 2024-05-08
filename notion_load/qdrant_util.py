@@ -54,6 +54,8 @@ def load_qdrant(args):
         os.getenv("NOTION_TOKEN"),
         os.getenv("NOTION_DATABASE_ID"),
         args.verbose,
+        validate_missing_content=True,
+        validate_missing_metadata=['id', 'title', 'source id', 'published', 'source'],
         metadata_filter_list=['id', 'title', 'tags', 'version', 'source id', 'published', 'source', 'myid'],
     )
     docs = notion_loader.load()
