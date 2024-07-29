@@ -46,10 +46,11 @@ def ntfy_notification(message: str,
                       title='Successful',
                       tags='info'
                       ):
-    requests.post("https://ntfy.sh/johntday_alerts",
-                  data=message,
-                  headers={
-                      "Title": title,
-                      "Priority": "urgent",
-                      "Tags": tags
-                  })
+    if os.getenv('NTFY_TOKEN') is not None:
+        requests.post(f"https://ntfy.sh/{os.getenv('NTFY_TOKEN')}",
+                      data=message,
+                      headers={
+                          "Title": title,
+                          "Priority": "urgent",
+                          "Tags": tags
+                      })
